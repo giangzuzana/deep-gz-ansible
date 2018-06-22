@@ -1,0 +1,9 @@
+---
+# vars file for conda
+    
+anaconda_installer_sh: Anaconda3-5.2.0-Linux-x86_64.sh
+anaconda_install_dir: /opt/anaconda3
+anaconda_make_sys_default: true
+anaconda_pkg_update: true
+anaconda_timeout_seconds: 600
+anaconda_install_packages: []
