@@ -25,7 +25,7 @@ Dependencies
 Example Playbook
 ----------------
 
-ansible-playbook roles/conda/test.yml
+ansible-playbook test.yml
 
 License
 -------
