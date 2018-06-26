@@ -16,10 +16,9 @@
   - when: not anaconda_bin_conda.stat.exists
     block:
     - name: Download the installer ...
-      become: yes
       get_url:
         url: "{{ anaconda_installer_url }}"
-        dest: "/tmp/{{ anaconda_installer_sh }}"
+        dest: "{{ home_dir }}/{{ anaconda_installer_sh }}"
         timeout: "{{ anaconda_timeout_seconds }}"
         checksum: "{{ anaconda_checksum }}"
         mode: 0755
@@ -27,7 +26,7 @@
 
     - name: Run the installer ...
       become: yes
-      shell: "bash /tmp/{{ anaconda_installer_sh }} -f -b -p {{ anaconda_install_dir }}"
+      shell: "bash {{ home_dir }}/{{ anaconda_installer_sh }} -f -b -p {{ anaconda_install_dir }}"
 
 
     - name: Make conda as the system default
@@ -48,9 +47,8 @@
 
     always:
     - name: Delete the installer ...
-      become: yes
       file:
-        path: "/tmp/{{ anaconda_installer_sh }}"
+        path: "{{ home_dir }}/{{ anaconda_installer_sh }}"
         state: absent
 
 
