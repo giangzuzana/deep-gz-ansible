@@ -14,8 +14,8 @@ User's requirements.
 Role Variables
 --------------
 
-defaults/main.yml 
-vars/main.yml
+- constants defaults/main.yml 
+- variables vars/main.yml
 
 Dependencies
 ------------
