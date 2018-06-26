@@ -1,7 +1,7 @@
 Role Name
 =========
 
-Instaltion of 
+Instalation on Ubuntu of 
 - data analytic stack (numpy, scipy, pandas, scikit-learn, ...) and 
 - deep learning stack (tensorflow, keras, ...) as well as 
 - auxilliary tools.
