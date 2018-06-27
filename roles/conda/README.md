@@ -9,7 +9,7 @@ Instalation on Ubuntu of
 Requirements
 ------------
 
-User's requirements.
+- user's requirements files/requirements.yml.
 
 Role Variables
 --------------
