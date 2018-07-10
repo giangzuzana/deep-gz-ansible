@@ -22,18 +22,18 @@
       packages:
         - curl
         - git
-        - python-setuptools
-        - python-pip
+        - python3-setuptools
+        - python3-pip
         - virtualenv
         - build-essential
-        - python-dev
-        - python-wheel
-        - python-tk
+        - python3-dev
+        - python3-wheel
+        - python3-tk
 
 
   - name: Update pip
     become: yes
-    command: pip install --upgrade pip
+    command: pip3 install --upgrade pip
 
 
   - name: Create project directory
@@ -50,7 +50,7 @@
 
 
   - name: Install requirements
-    pip: 
+    pip:
+      virtualenv_python: python3.6 
       virtualenv: "{{ home_dir }}/{{ user_project_name }}/{{ user_virtual_env_name }}"
-      virtualenv_python: python2.7
       requirements: "{{ home_dir }}/{{ user_project_name }}/requirements.txt"
