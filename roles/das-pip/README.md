@@ -1,15 +1,15 @@
 Role Name
 =========
 
-Instalation on Ubuntu of 
-- data analytic stack (numpy, scipy, pandas, scikit-learn, ...) and 
-- deep learning stack (tensorflow, keras, ...) as well as 
-- auxilliary tools.
+Instalation using PyPI (pip) on Ubuntu of 
+- data analytic stack: numpy, scipy, pandas, matplotlib, scikit-learn, ... 
+- deep learning stack: tensorflow, keras, ... 
+- auxilliary python tools
 
 Requirements
 ------------
 
-- user's requirements files/requirements.yml.
+- user's requirements files/requirements.txt
 
 Role Variables
 --------------
