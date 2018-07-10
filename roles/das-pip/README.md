@@ -1,10 +1,12 @@
 Role Name
 =========
 
-Instalation using PyPI (pip) on Ubuntu of 
+Install virtual env containing 
 - data analytic stack: numpy, scipy, pandas, matplotlib, scikit-learn, ... 
 - deep learning stack: tensorflow, keras, ... 
 - auxilliary python tools
+
+Using default python 2.7 (pip) on Ubuntu 18.04
 
 Requirements
 ------------
