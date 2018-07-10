@@ -5,6 +5,7 @@ Install virtual env containing
 - data analytic stack: numpy, scipy, pandas, matplotlib, scikit-learn, ... 
 - deep learning stack: tensorflow, keras, ... 
 - auxilliary tools
+
 Using conda (python 3.6) on Ubuntu 18.04
 
 Requirements
