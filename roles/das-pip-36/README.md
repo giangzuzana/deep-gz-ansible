@@ -6,7 +6,7 @@ Install virtual env containing
 - deep learning stack: tensorflow, keras, ... 
 - auxilliary python tools
 
-Using default python 3.6 (pip) on Ubuntu 18.04
+CPU version with default python 3.6 (pip) on Ubuntu 18.04
 
 Requirements
 ------------
