@@ -20,7 +20,6 @@
       name: "{{ packages }}"
     vars:
       packages:
-        - curl
         - git
         - python-setuptools
         - python-pip
@@ -51,6 +50,6 @@
 
   - name: Install requirements
     pip: 
-      virtualenv: "{{ home_dir }}/{{ user_project_name }}/{{ user_virtual_env_name }}"
       virtualenv_python: python2.7
+      virtualenv: "{{ home_dir }}/{{ user_project_name }}/{{ user_virtual_env_name }}"
       requirements: "{{ home_dir }}/{{ user_project_name }}/requirements.txt"
